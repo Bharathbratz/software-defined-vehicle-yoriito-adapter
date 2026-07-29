@@ -1,0 +1,20 @@
+signals:
+
+  rtc_time:
+    source:
+      service: RTC_Service
+      event: TimestampUpdate
+
+    semantic:
+      path: Vehicle.System.CurrentTime
+      datatype: string
+
+  door_front_left:
+
+    source:
+      service: DoorService
+      event: DoorStateUpdate
+
+    semantic:
+      path: Vehicle.Cabin.Door.Row1.Left.IsOpen
+      datatype: boolean
