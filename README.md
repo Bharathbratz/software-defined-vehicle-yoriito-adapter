@@ -9,3 +9,4 @@
 #Validation 
 1. After the above build steps run ./aaos_sdv_adapter in the same build folder to see the output of window position
 
+Devcontainer implementation is pending
